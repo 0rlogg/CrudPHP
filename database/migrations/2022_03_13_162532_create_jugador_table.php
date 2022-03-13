@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJugadorsTable extends Migration
+class CreateJugadorTable extends Migration
 {
     /**
      * Run the migrations.
@@ -19,6 +19,7 @@ class CreateJugadorsTable extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->string('email');
+            $table->string('alias');
             $table->timestamps();
         });
     }
