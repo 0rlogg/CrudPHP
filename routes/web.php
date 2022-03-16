@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::resource('Jugador',JugadorController::class)->middleware('auth');
 //middleware('auth') sirve para que si no estas autentificado no puedas acceder a las zonas de creacion, borrado y
 //edicion de ususarios y jugadores
-Auth::routes(['register'=>false,'reset'=>false]);
+Auth::routes(['register'=>true,'reset'=>false]);
 
 Route::get('/home', [JugadorController::class, 'index'])->name('home');
 
